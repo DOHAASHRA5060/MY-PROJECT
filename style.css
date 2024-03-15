@@ -1,0 +1,121 @@
+/* font-family: "Cairo", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Pacifico", cursive; */
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background: url(./images/image3.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Josefin Sans", sans-serif;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+  color: rgb(232, 232, 232);
+  user-select: none;
+}
+
+::selection {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(40px);
+  background-color: rgba(0, 0, 0, 0.202);
+  width: 50%;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px #292929bc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.container .header h1 {
+  font-family: "Caveat", cursive;
+  margin-top: 0px;
+  padding-top: 0px;
+  font-weight: 400;
+  font-size: 100px;
+}
+
+.container .header i {
+  position: absolute;
+  transform: scale(3);
+}
+
+.container .header i:first-child {
+  top: 20px;
+  left: 10px;
+}
+
+.container .header i:last-child {
+  bottom: 20px;
+  right: 10px;
+}
+
+article p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  user-select: text;
+  line-height: 30px;
+  letter-spacing: 2px;
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.author {
+  font-family: "Caveat", cursive;
+
+  font-weight: 500;
+  font-size: 32px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.btn span {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.232);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn span:hover {
+  cursor: pointer;
+}
+
+@media (width <= 768px) {
+  body {
+    /* scale: 0.8; */
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .parent {
+    height: 100%;
+    scale: 0.8;
+  }
+
+  .container {
+    width: 90%;
+  }
+}
